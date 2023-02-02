@@ -5,6 +5,8 @@ function setup(){
     canvas=createCanvas(500,500);
     canvas.center();
     background("white");
+    canvas.mouseReleased(adivinhe);
+    sintetizador=window.speechSynthesis;
 }
  function apagar(){
     background("white");
@@ -19,3 +21,4 @@ function setup(){
  function tirarFoto(){
     save("MeuCanvas.png")
  }
+ 
